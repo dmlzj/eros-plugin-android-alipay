@@ -5,7 +5,7 @@ group='com.github.HirahKong'
 android {
     compileSdkVersion 25
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -28,7 +28,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:25.3.1'
     testImplementation 'junit:junit:4.12'
-    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.3'
+    compile project(':nexus')
     //支付宝依赖包
     implementation files('libs/alipaySdk-20180403.jar')
 }
